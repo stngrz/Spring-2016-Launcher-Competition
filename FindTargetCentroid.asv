@@ -1,0 +1,20 @@
+function [ centroidRow, centroidCol, modImageArray] = FindTargetCentroid( RGBarray, RGBtarget )
+ R = RGBarray(r,c,1);
+ G = RGBarray(r,c,2);
+ B = RGBarray(r,c,3);
+ logArray = R == RGBtarget(1) & G = targetRGB(2)& B == RGBtarget(3);
+ [rowTarget, colTarget] = find(logArray, 1);
+ rowTargetBegin = rowTarget;
+ colTargetBegin = colTarget;
+ while(RGBarray(rowTarget, colTarget, :)  == RGBarray(rowTarget, colTarget+1, :))
+     colTarget = colTarget+1;
+ end
+ while(RGBarray(rowTarget, colTarget, :)  == RGBarray(rowTarget+1, colTarget, :))
+     rowTarget = rowTarget+1;
+ end
+ centroidRow = ((rowTargetBegin + rowTarget)/2);
+ centroidCol = ((colTargetBegin + colTarget)/2);
+ 
+ modImageArray = RGBarray;
+ modImageArray(rowTargetBegin:rowTarget, colTargetBegin:colTarget, :) = 0;
+end
