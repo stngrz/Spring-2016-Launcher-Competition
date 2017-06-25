@@ -1,5 +1,5 @@
 # Spring-2016-Launcher-Competition
-Image analysis for target(s) recognition; trajectory calculation for target(s); solution output to Launcher; execute Position, Launch, Reload ect... 
+.zip contains Competition Code and all associated calibration files. 
 
 Contains cpp src for MatLab processing and solution output. Arduino and MatLab interface via serial communication. 
 
