@@ -1,5 +1,5 @@
 # Spring-2016-Launcher-Competition
-.zip contains Competition Code and all associated calibration files. Individual uploads are selected files for viewing ease and to show diveristy.
+.zip contains Competition Code and all associated calibration files. Individual uploads are selected files for viewing ease and to show complexity.
 
 Contains C scripts written in: C++ IDE, MatLab, and Arduino.
 
